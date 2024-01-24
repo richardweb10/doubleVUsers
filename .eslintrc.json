@@ -1,0 +1,19 @@
+{
+  "env": {
+    "es2021": true,
+    "jest": true,
+    "node": true
+},
+  "root": true,
+  "extends": ["eslint:recommended","plugin:react/recommended"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "rules": {
+        "no-useless-escape": "off"
+      }
+    }
+  ]
+}
